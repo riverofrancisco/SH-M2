@@ -134,7 +134,7 @@ function addToDo() {
   let Value = document.getElementById('toDoInput').value;
   //2
   const todo = new ToDo(Value);
-  toDoItems.push(todo);
+  toDoItems.unshift(todo);
   //3
   Value = '';
   //4
