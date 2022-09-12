@@ -1,1 +1,25 @@
 // Mixins acá
+//ponemos el texto que se repite y luego usamos mixins para colocarlo en los otros archivos less.
+.flex(@direction){
+    display: flex;
+    flex-direction: @direction;
+}
+
+.image(@radius: 20px, ){
+    border-radius: @radius;   
+}
+
+.botones(@bg-color, @font-color){
+    background-color: @bg-color;
+    color: @font-color;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 15px;
+
+    &:hover{
+        background-color: @font-color;
+        color: @bg-color;
+        cursor: pointer;
+    }
+}
