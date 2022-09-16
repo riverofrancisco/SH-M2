@@ -5,8 +5,13 @@
 1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
 
 	* Framework
+	Es como un espacio de trabajo que facilita el trabajo (en este caso en CSS), haciendo que los cambios y estilos tengan funciones predefinidas volviendo el trabajo mas simple de programar.
+	
 	* Preprocesador
+	Son programas que ofrecen una sintaxis cómoda para generar código CSS y facilitar los cambios en el mismo. Permiten generar variables y luego utilizarlas en el CSS.
+
 	* Responsive website
+	Es un sitio web cuyo diseño se ajusta a cualquier tipo de pantalla. Se recomienda que primero se diseñe para mobile y después para una relación de aspecto de escritorio.
 
 
 2. Crear una Responsive Website según las siguientes indicaciones:
