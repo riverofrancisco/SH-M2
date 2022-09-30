@@ -22,7 +22,7 @@
     /* look */
     background-color: gold;
     color: white;
-    border-color: white;
+    border: none;
     text-shadow: 2px;
     border-radius: 5px;
 }
