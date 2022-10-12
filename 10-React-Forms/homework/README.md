@@ -105,7 +105,7 @@ Genial! ahora tenemos estado, pero tenemos que *conectarlo* con el formulario. P
       </div>
       ...
 
-}
+
 ```
 
 Por ahora, el input toma el valor del estado, pero cuando se cambia el input el estado no cambia, tenemos que bindearlos!
