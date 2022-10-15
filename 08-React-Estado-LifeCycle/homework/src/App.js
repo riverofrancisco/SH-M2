@@ -40,9 +40,6 @@ export default function App() {
     setCities(oldCities => oldCities.filter(c => c.id !== id))
   }
 
-  //Nos falta la función que llamará las ciudades de nuestra API para que la APP funcione.
-
-
 
 
   return (
