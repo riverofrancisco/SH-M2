@@ -2,10 +2,13 @@ import React, { Component } from "react";
 import { connect } from 'react-redux';
 import { increment, decrement } from '../actions';
 
+
+
 class Counter extends Component {
     // Extra Credit
     incrementIfOdd = () => {
       //Implementar una función de incremento que sólo aumenta si el valor del contador es impar
+      
     };
     // Extra Credit
     incrementAsync = () => {
@@ -18,24 +21,23 @@ class Counter extends Component {
         return (
             <p>
                 Clickeado: {this.props.count} veces
-                <button onClick={() => {/* Completar */ }}>
+                <button onClick={() => this.props.increment()}>
                     + {/* Incremeta */}
                 </button>
-                <button onClick={() => {/* Completar */ }}>
+                <button onClick={() => this.props.decrement()}>
                     -  {/* Decrementa */}
                 </button>
                  {/* Si quieres hacer los extra credit puede descomentar las lineas de abajo */}
-                {/* <button onClick={this.incrementIfOdd}>
+                <button onClick={this.incrementIfOdd}>
                     incrementa si es impar
                 </button>
-                <button onClick={this.incrementAsync}>
+                {/* <button onClick={this.incrementAsync}>
                     Incrementa despues de un segundos
                 </button>  */}
             </p>
         );
     }
 }
-
 // La función mapStateToProps especifica qué porción del árbol de estados necesita recibir este componente.
 // En este caso, dado que nuestro store de redux sólo almacena el valor del contador,
 // este componente recibe el estado completo.
