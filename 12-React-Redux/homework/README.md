@@ -30,7 +30,7 @@ En la carpeta `components` tenemos 4 subcarpetas: `Buscador`. `Favorites`, `Movi
 `NavBar.js` sera nuestro Header que nos permitira navegar por nuestras rutas.
 `Buscador.js` sera nuestro Home, en donde buscaremos peliculas (llamando a la API) y las mostraremos en forma de lista.
 En `Favorites.js` mostraremos la lista de peliculas a las cuales seleccionamos como Favoritas.
-Y por ultimo en `Movie.js` sera nuestro compente en donde mostraremos una pelicula en detalle. Accedemos a este componente haciendo click dentro de nuestro buscador o en nuestras favoritas.
+Y por ultimo en `Movie.js` sera nuestro componente en donde mostraremos una pelicula en detalle. Accedemos a este componente haciendo click dentro de nuestro buscador o en nuestras favoritas.
 
 ### Creamos nuestras Actions
 
@@ -38,7 +38,7 @@ En nuestro archivo `index.js` en nuestra carpeta actions. Por ahora vamos a crea
 
 > Abajo tienes un par de ejemplos, para las dos que faltan tienes que investigar y hacerlo por tu propia cuenta. La api que usamos es `http://www.omdbapi.com/`
 
-> Para obtener alguna película a partir de su ID pueden usar el endpoint: http://www.omdbapi.com/?apikey=20dac387&i={idMovie}
+> Para obtener alguna película a partir de su ID pueden usar el endpoint: http://www.omdbapi.com/?a pikey=20dac387&i={idMovie}
 
 ```javascript
 export function addMovieFavorite(payload) {
@@ -56,7 +56,7 @@ export function getMovies(titulo) {
 }
 
 ```
-Cada accion devuelve un objecto, la primera key de este objeto es el `type`, su valor lo ponemos nosotros, por convencion se usan mayusculas y guion bajo `_` para separar. Como segundo argumento recibe un `payload`, que son datos que puede llevar que usaremos en nuestro reducer para actualizar el estado. En `addMovieFavorite` el payload que pasaremos cuando hagamos un dispatch de esa action sera el nombre de la Pelicula.En `removeMovieFavorite`,nuestro payload sera la pelicula a eliminar. En `getMovies`, nuestro payload sera el objeto que recibamos de nuestra request. En `getMovieDetail`, el payload sera el objeto con los detalles de la pelicula que seleccionamos.
+Cada accion devuelve un objeto, la primera key de este objeto es el `type`, su valor lo ponemos nosotros, por convencion se usan mayusculas y guion bajo `_` para separar. Como segundo argumento recibe un `payload`, que son datos que puede llevar que usaremos en nuestro reducer para actualizar el estado. En `addMovieFavorite` el payload que pasaremos cuando hagamos un dispatch de esa action sera el nombre de la Pelicula. En `removeMovieFavorite`, nuestro payload sera la pelicula a eliminar. En `getMovies`, nuestro payload sera el objeto que recibamos de nuestra request. En `getMovieDetail`, el payload sera el objeto con los detalles de la pelicula que seleccionamos.
 
 ### Creamos nuestro Reducer
 

@@ -13,8 +13,8 @@ export default function NavBar() {
             <nav>
                 <ul className="list">
                     <li className="list-item">
-                        <NavLink exact to="/" >Home</NavLink>
-                        <NavLink to="/favs" >Favoritas</NavLink>
+                        <NavLink exact to="/" >Home</NavLink>{/* Recordar que usamos el exact para que solo lo muestre con exacta coincidencia */}
+                        <NavLink to="/favs" >Favoritas</NavLink>{/* NavLik != Link porque permite mostrar cual está activo con estilos */}
                     </li>
                 </ul>
             </nav>
